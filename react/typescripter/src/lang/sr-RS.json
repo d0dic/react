@@ -1,0 +1,18 @@
+{
+  "aboutLink": {
+    "defaultMessage": "O nama",
+    "description": "O nama link"
+  },
+  "aboutTitle": {
+    "defaultMessage": "O nama",
+    "description": "Test title"
+  },
+  "homeLink": {
+    "defaultMessage": "Pocetna",
+    "description": "Pocetna link"
+  },
+  "todosLink": {
+    "defaultMessage": "Zadaci",
+    "description": "Zadaci link"
+  }
+}

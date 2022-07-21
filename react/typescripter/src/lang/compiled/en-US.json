@@ -1,0 +1,26 @@
+{
+  "aboutLink": [
+    {
+      "type": 0,
+      "value": "About"
+    }
+  ],
+  "aboutTitle": [
+    {
+      "type": 0,
+      "value": "About"
+    }
+  ],
+  "homeLink": [
+    {
+      "type": 0,
+      "value": "Home"
+    }
+  ],
+  "todosLink": [
+    {
+      "type": 0,
+      "value": "Todos"
+    }
+  ]
+}

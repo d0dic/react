@@ -7,16 +7,13 @@ import Main from './components/Main';
 
 import './assets/index.css';
 
-// TODO: Add Suspense
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Main />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Main />
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function

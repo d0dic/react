@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect } from 'react';
 import { loremIpsum } from 'lorem-ipsum';
 
 import Activity from '../components/Activity';
@@ -12,6 +12,8 @@ export type ActivityEvent = {
   content?: string,
   created: Date,
 }
+
+let interval: any;
 
 function Todos(): ReactElement {
   const { todos } = useSlice();
@@ -30,7 +32,18 @@ function Todos(): ReactElement {
     actions.todos.delete(id);
   };
 
-  // TODO: Setup translations
+  // for demo purposses
+  useEffect(() => {
+    if (todos.length < 3) {
+      if (!interval) interval = setInterval(addTodo, 500);
+      return;
+    }
+
+    if (interval) {
+      clearInterval(interval);
+    }
+  }, [todos]);
+
   return (
     <div>
       <h1>Todos page</h1>

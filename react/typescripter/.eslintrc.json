@@ -24,6 +24,7 @@
         "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
         "import/extensions": [1, { "tsx": "never", "ts": "never" }],
         "no-restricted-globals": ["error", "event", "fdescribe"],
-        "import/no-unresolved": [1]
+        "import/no-unresolved": [1],
+        "react/prop-types": ["off"]
     }
 }

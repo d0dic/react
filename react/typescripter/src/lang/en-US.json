@@ -1,0 +1,18 @@
+{
+  "aboutLink": {
+    "defaultMessage": "About",
+    "description": "About link"
+  },
+  "aboutTitle": {
+    "defaultMessage": "About",
+    "description": "Test title"
+  },
+  "homeLink": {
+    "defaultMessage": "Home",
+    "description": "Home link"
+  },
+  "todosLink": {
+    "defaultMessage": "Todos",
+    "description": "Todos link"
+  }
+}

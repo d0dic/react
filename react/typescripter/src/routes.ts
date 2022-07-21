@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 
-import About from './pages/About';
-import Home from './pages/Home';
-import Todos from './pages/Todos';
+const About = React.lazy(() => import('./pages/About'));
+const Todos = React.lazy(() => import('./pages/Todos'));
+const Home = React.lazy(() => import('./pages/Home'));
 
 export type NavRoute = {
   path: string,

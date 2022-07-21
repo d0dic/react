@@ -1,0 +1,26 @@
+{
+  "aboutLink": [
+    {
+      "type": 0,
+      "value": "O nama"
+    }
+  ],
+  "aboutTitle": [
+    {
+      "type": 0,
+      "value": "O nama"
+    }
+  ],
+  "homeLink": [
+    {
+      "type": 0,
+      "value": "Pocetna"
+    }
+  ],
+  "todosLink": [
+    {
+      "type": 0,
+      "value": "Zadaci"
+    }
+  ]
+}

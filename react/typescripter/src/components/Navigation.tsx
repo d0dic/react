@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 
 const listStyle = {
@@ -12,9 +13,33 @@ const listStyle = {
 function Navigation() {
   return (
     <ul style={listStyle}>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/todos">Todos</Link></li>
-      <li><Link to="/about">About</Link></li>
+      <li>
+        <Link to="/">
+          <FormattedMessage
+            id="homeLink"
+            defaultMessage="Home"
+            description="Home link"
+          />
+        </Link>
+      </li>
+      <li>
+        <Link to="/todos">
+          <FormattedMessage
+            id="todosLink"
+            defaultMessage="Todos"
+            description="Todos link"
+          />
+        </Link>
+      </li>
+      <li>
+        <Link to="/about">
+          <FormattedMessage
+            id="aboutLink"
+            defaultMessage="About"
+            description="About link"
+          />
+        </Link>
+      </li>
     </ul>
   );
 }
