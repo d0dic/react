@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import events, { eventEmitter } from '../lib/events';
-import { ActivityEvent } from '../pages/Todos';
+import { ActivityEvent } from '../lib/types';
 
 function Activity() {
   const [notes, setNotes] = useState<ActivityEvent[]>([]);

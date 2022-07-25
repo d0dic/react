@@ -5,7 +5,8 @@ import {
 
 import events, { eventEmitter } from '../lib/events';
 import { actions, Todo } from '../store/reducers/todos';
-import { ActivityEvent } from '../pages/Todos';
+
+import { ActivityEvent } from '../lib/types';
 
 function* logger(data: Action) {
   yield delay(1000);
