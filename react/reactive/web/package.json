@@ -1,0 +1,40 @@
+{
+  "name": "rn_multi_web",
+  "version": "0.0.1",
+  "description": "RN Web",
+  "author": "Milos Dodic",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "link:../node_modules/react",
+    "react-dom": "link:../node_modules/react-dom",
+    "react-native-web": "link:../node_modules/react-native-web",
+    "react-scripts": "^5.0.1",
+    "ui-kit": "link:../.bundle/web"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-react-native-web": "^0.18.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
