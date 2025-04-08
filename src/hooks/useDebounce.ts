@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef } from "react"
 
 function useDebounce(func: any, time: number = 0, deps: any[] = []): Function {
-
     const timeout = useRef<number>(0)
 
     useEffect(() => {
@@ -11,11 +10,20 @@ function useDebounce(func: any, time: number = 0, deps: any[] = []): Function {
     }, [timeout])
 
     return useCallback((...args: any) => {
+
         clearTimeout(timeout.current)
-        
-        timeout.current = setTimeout(() => {
-            func(...args)
-        }, time)
+
+        return new Promise((resolve, reject) => {
+            timeout.current = setTimeout(() => {
+                try {
+                    const result = func(...args)
+
+                    resolve(result)
+                } catch(e) {
+                    reject(e)
+                }
+            }, time)
+        })
     }, deps)
 
 }
